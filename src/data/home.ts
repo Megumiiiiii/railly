@@ -2,7 +2,7 @@ export const BUILDING_PROJECTS = [
   {
     title: "Starter",
     link: "/pemula",
-    description: "Silahkan dibaca.",
+    description: "",
     internal: true,
   },
   
