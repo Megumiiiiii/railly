@@ -7,6 +7,7 @@ import oneHunterThemeVercelLight2024 from "./public/theme/one-hunter-vercel-ligh
 import oneHunterThemeVercelDark2024 from "./public/theme/one-hunter-vercel-dark.json";
 import vercel from "@astrojs/vercel/serverless";
 
+
 export default defineConfig({
   site: "https://www.zerdrop.fun",
   integrations: [
