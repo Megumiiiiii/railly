@@ -7,7 +7,7 @@ import path from "path";
 export const GET: APIRoute = async ({ params }) => {
   const { slug } = params;
 
-  const post = await getEntry("guides", slug as string);
+  const post = await getEntry("writing", slug as string);
   if (!post) {
     return new Response("Not found", { status: 404 });
   }
@@ -247,7 +247,7 @@ export const GET: APIRoute = async ({ params }) => {
 };
 
 export async function getStaticPaths() {
-  const blogPosts = await getCollection("guides");
+  const blogPosts = await getCollection("writing");
   return blogPosts.map((post) => ({
     params: { slug: post.slug },
   }));
