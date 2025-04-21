@@ -8,7 +8,7 @@ import oneHunterThemeVercelDark2024 from "./public/theme/one-hunter-vercel-dark.
 import vercel from "@astrojs/vercel/serverless";
 
 export default defineConfig({
-  site: "https://www.railly.dev",
+  site: "https://www.zerdrop.fun",
   integrations: [
     tailwind({
       applyBaseStyles: false,

@@ -23,18 +23,18 @@ const groupedPosts: GroupedPosts = blogPosts.reduce<GroupedPosts>(
 ---
 
 <MainLayout
-  title="Writing"
-  description="Thoughts on technology, design, and life."
-  author="Railly Hugo"
+  title="Guides"
+  description="List Guides"
+  author="ZeroDrop"
   backTitle="Index"
   backUrl="/"
   image="/images/writing-og.png"
 >
   <div class="[grid-content:2]">
     <section class="relative">
-      <h1 class="text-lg font-bold">Writing</h1>
+      <h1 class="text-lg font-bold">Guides</h1>
       <p class="text-muted-foreground">
-        Thoughts on technology, design, and life
+        List Guides
       </p>
     </section>
 
@@ -50,7 +50,7 @@ const groupedPosts: GroupedPosts = blogPosts.reduce<GroupedPosts>(
                 {posts.map((post) => (
                   <li class="flex justify-between py-2 border-b">
                     <a
-                      href={`/writing/${post.slug}`}
+                      href={`/guides/${post.slug}`}
                       class="text-base font-medium no-underline hover:underline"
                     >
                       {post.data.title}

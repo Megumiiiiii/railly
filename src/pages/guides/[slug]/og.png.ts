@@ -7,7 +7,7 @@ import path from "path";
 export const GET: APIRoute = async ({ params }) => {
   const { slug } = params;
 
-  const post = await getEntry("writing", slug as string);
+  const post = await getEntry("guides", slug as string);
   if (!post) {
     return new Response("Not found", { status: 404 });
   }
@@ -103,7 +103,7 @@ export const GET: APIRoute = async ({ params }) => {
                           fontWeight: 600,
                           color: "#959595",
                         },
-                        children: "@RaillyHugo",
+                        children: "@ZeroDropDAO",
                       },
                     },
                   ],
@@ -179,7 +179,7 @@ export const GET: APIRoute = async ({ params }) => {
                     fontWeight: 500,
                     color: "#959595",
                   },
-                  children: "railly.dev",
+                  children: "zerodrop.fun",
                 },
               },
             ],
@@ -247,7 +247,7 @@ export const GET: APIRoute = async ({ params }) => {
 };
 
 export async function getStaticPaths() {
-  const blogPosts = await getCollection("writing");
+  const blogPosts = await getCollection("guides");
   return blogPosts.map((post) => ({
     params: { slug: post.slug },
   }));

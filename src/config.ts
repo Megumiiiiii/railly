@@ -1,4 +1,4 @@
-export const SITE_TITLE = "Railly Hugo";
+export const SITE_TITLE = "ZeroDrop";
 export const SITE_DESCRIPTION =
-  "Software Engineer. Building developer tools and open source projects";
-export const SITE_AUTHOR = "Railly Hugo";
+  "Your go-to source for the latest in crypto airdrops, testnet, retroactive rewards, and hidden blockchain gems. Stay ahead in Web3. ";
+export const SITE_AUTHOR = "ZeroDrop";
